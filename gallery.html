@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="css/function.js"></script>
+
+	<style type="text/css">
+		.desc
+		{
+			/*width: 21vw; height: 12vw; display: none; z-index: 2; background-color: #ffffffff;*/
+			position: absolute;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			border-radius: 9px;
+			text-align: justify;
+			border-bottom: 1px solid black;
+			border-right: 1px solid black; 
+			border-left: 1px solid black;
+
+			width: 48vw;height: 20vw; display: none;background-color: #00000073; color: #efdfdf;
+		}
+		span
+		{
+			position: absolute;
+			right: -23px;
+			font-size: 25px;
+			cursor: pointer;
+		}
+/*		.gallerypics:hover
+		{
+			width: 21vw;height: 21vw;
+		}*/
+	</style>
+</head>
+<body>
+	<nav class="header">
+		<ul>
+			<li>
+				<a href="" style="padding-top: 10px;padding-left: 10px;margin-top: 0px;"><img class="gallerypics" style="border-radius:50%;width: 50px;height: 50px;" src="includes/img.jpg"></a>
+			</li>
+			<li><a href="index.html">Home</a></li>
+			<li><a class="current" href="gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
+<!-- 		<form class="search">
+			Search:<input type="text" name="">
+		</form> -->
+	</nav>
+		<div class="main">
+			<h1 style="margin-top: 65px;margin-left: 20px">GALLERY</h1>
+			<!-- <img src="includes/img (1).jpg" style="width: 100%;height: 320px;"> -->
+		</div>
+		<div style="width: 70%; margin: auto;text-align: center; ">
+
+			<div class="gallerycontent" id="targetModal" style="width: 68vw;height: 20vw;text-align: left;display: none; position: fixed; top:68px;">
+				<img class="gallerypics" id="picSelected" src="includes/img.jpg" >
+					<span onclick="hideText('targetModal')">X</span>
+				<div id="descSelected" class="desc" style="display: inline-block;">
+					<p></p>
+				</div>
+			</div>	
+
+
+			<div class="gallerycontent">
+				<img class="gallerypics" src="includes/bg.jpg" onclick="displayText1('desc1' , 'includes/bg.jpg')">
+				<div id="desc1" class="desc">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>	
+
+			<div class="gallerycontent">
+				<img class="gallerypics" src="includes/img.jpg" onclick="displayText1('desc2' , 'includes/img.jpg')">
+				<div id="desc2" class="desc">
+					<p>222Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>	
+			<div class="gallerycontent">
+				<img class="gallerypics" src="includes/img.jpg" onclick="displayText1('desc3' , 'includes/bg.jpg')">
+				<div id="desc3" class="desc">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>	
+			
+			<div class="gallerycontent">
+				<img class="gallerypics" src="includes/img.jpg" onclick="displayText1('desc4' , 'includes/bg.jpg')">
+				<div id="desc4" class="desc">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>	
+			<div class="gallerycontent">
+				<img class="gallerypics" src="includes/img.jpg" onclick="displayText1('desc5' , 'includes/bg.jpg')">
+				<div id="desc5" class="desc">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>	
+			
+			<div class="gallerycontent">
+				<img class="gallerypics" src="includes/img.jpg" onclick="displayText1('desc6' , 'includes/bg.jpg')">
+				<div id="desc6" class="desc">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+
+			<div class="gallerycontent">
+				<img class="gallerypics" src="includes/img.jpg" onclick="displayText1('desc7' , 'includes/bg.jpg')">
+				<div id="desc7" class="desc">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+
+			<div class="gallerycontent">
+				<img class="gallerypics" src="includes/img.jpg" onclick="displayText1('desc8' , 'includes/bg.jpg')">
+				<div id="desc8" class="desc">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+
+			<div class="gallerycontent">
+				<img class="gallerypics" src="includes/img.jpg" onclick="displayText1('desc9' , 'includes/bg.jpg')">
+				<div id="desc9" class="desc">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>												
+		</div>
+	<footer class="footer">CBU TRAVELS Copyright 2018</footer>
+</body>
+</html>
