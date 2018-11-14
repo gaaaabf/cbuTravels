@@ -17,7 +17,7 @@
   margin-top: 100px;
 
 
-      padding: 10px 15px;
+    padding: 10px 15px;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
     display: block;
@@ -41,6 +41,12 @@
 {
 	background-color: #b0dbd0;
 	border: 1px solid black;
+}
+
+.p-desc
+{
+	width: 90%;
+    margin-left: 20px;
 }
 
 ul
