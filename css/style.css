@@ -123,6 +123,7 @@ h1
 {
 	width: 20vw;height: 20vw;
 	vertical-align: bottom;
+	object-fit: cover;
 }
 
 body
