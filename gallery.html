@@ -15,11 +15,8 @@
 			overflow-y: scroll;
 			border-radius: 9px;
 			text-align: justify;
-			border-bottom: 1px solid black;
-			border-right: 1px solid black; 
-			border-left: 1px solid black;
 
-			width: 48vw;height: 20vw; display: none;background-color: #00000073; color: #efdfdf;
+			width: 48vw;height: 20vw; display: none; color: #efdfdf;
 		}
 		span
 		{
@@ -38,7 +35,7 @@
 	<nav class="header">
 		<ul>
 			<li>
-				<a href="" style="padding-top: 10px;padding-left: 10px;margin-top: 0px;"><img class="gallerypics" style="border-radius:50%;width: 50px;height: 50px;" src="includes/img.jpg"></a>
+				<a href="" style="padding-top: 10px;padding-left: 10px;margin-top: 0px;"><img class="gallerypics" style="border-radius:50%;width: 50px;height: 50px;" src="images/logo.jpg"></a>
 			</li>
 			<li><a href="index.html">Home</a></li>
 			<li><a class="current" href="gallery.html">Gallery</a></li>
@@ -55,7 +52,7 @@
 		</div>
 		<div style="width: 70%; margin: auto;text-align: center; ">
 
-			<div class="gallerycontent" id="targetModal" style="width: 750px;height: 300px;text-align: left;display: none; position: fixed; top:68px;">
+			<div class="gallerycontent" id="targetModal" style="background-color: rgba(0, 0, 0, 0.85);width: 70vw;height: 300px;text-align: left;display: none; position: fixed; top:68px;">
 				<div style="padding: 20px">
 					<img class="gallerypics" id="picSelected" src="includes/img.jpg" >
 						<span onclick="hideText('targetModal')">X</span>
@@ -96,90 +93,107 @@
 			<div class="gallerycontent">
 				<img class="gallerypics" src="images/PLACES/KAWASAN.jpg" onclick="displayText1('desc3' , 'images/PLACES/KAWASAN.jpg')">
 				<div id="desc3" class="desc">
-					<h2 class="p-desc" style="text-align: center;">FORTSANPEDRO</h2>
-					<p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2 class="p-desc" style="text-align: center;">KAWASAN</h2>
+					<p class="p-desc">
+						The Kawasan Falls, a three-layered waterfall, is one of the popular tourist destinations in the province. Canyoning tours are offered upstream of the Kawasan Falls, where the Matutinao river flows through a secluded canyon. There is also the Badian mountain range and the popular trekking destination of Osmeña Peak.<br><br>
+
+						The town's jurisdiction includes Zaragosa or Badian Island, where there is a white sandy private beach and which from there snorkeling and diving activities can be arranged. Nearby Pescador Island, Moalboal offers corals and marine life for divers.
+					</p>
 				</div>
 			</div>	
 			
 			<div class="gallerycontent">
 				<img class="gallerypics" src="images/PLACES/OSLOB.jpg" onclick="displayText1('desc4' , 'images/PLACES/OSLOB.jpg')">
 				<div id="desc4" class="desc">
-					<h2 class="p-desc" style="text-align: center;">FORTSANPEDRO</h2>
-					<p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2 class="p-desc" style="text-align: center;">OSLOB</h2>
+					<p class="p-desc">
+						Oslob, Cebu is a small coastal town with a population of 30,000 people. It is a hub of activity with several tourist attractions to offer to the hoards of visitors who stop by. It is most well known for being one of the best spots to swim with whale sharks. However, there are also several other attractions to check out in Oslob.
+					</p>
 				</div>
 			</div>	
 			<div class="gallerycontent">
 				<img class="gallerypics" src="images/PLACES/SIMALACHURCH.jpg" onclick="displayText1('desc5' , 'images/PLACES/SIMALACHURCH.jpg')">
 				<div id="desc5" class="desc">
-					<h2 class="p-desc" style="text-align: center;">FORTSANPEDRO</h2>
-					<p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2 class="p-desc" style="text-align: center;">SIMALA CHURCH</h2>
+					<p class="p-desc">Simala Shrine Church is a religious structure and establishment located in Sibonga Town, Southern Cebu.
+					<br><br>
+					Cebu Province is where Catholicism was first sowed and churches established by European missionaries (Spanish) in the 16th century.
+					<br><br>
+					Certainly, the Christian faith that was brought in this beautiful province spread throughout the country as the missionaries and faithful locals move and live around various places.
+					<br><br>
+					Simala Shrine Church then is just one of those religious places, if not the most popular nowadays, where most believers (Catholics) come for various reasons.
+					<br><br>
+					Pilgrimages or visiting religious places is one of the most important aspects that most Filipino Catholics have. This aspect keeps their faith alive and keeps them going despite all the challenges in life.
+				</p>
 				</div>
 			</div>	
 			
 			<div class="gallerycontent">
 				<img class="gallerypics" src="images/PLACES/SIRAOFLOWERGARDEN.jpg" onclick="displayText1('desc6' , 'images/PLACES/SIRAOFLOWERGARDEN.jpg')">
 				<div id="desc6" class="desc">
-					<h2 class="p-desc" style="text-align: center;">FORTSANPEDRO</h2>
-					<p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2 class="p-desc" style="text-align: center;">SIRAO FLOWER GARDEN</h2>
+					<p class="p-desc">
+						In Cebu, Philippines, a so-called “Mini Amsterdam” is attracting tourists from all over the country and even foreigners. It is the famous “Sirao Flower Farm” located in a mountain barangay just few minutes from JY, Lahug, Cebu City.
+						<br><br>
+						It all started when a couple planted flowering plants to be harvested and sold on All Soul’s Day. They then noticed that their garden is attracting visitors so they decided not to cut them at all. The incursion of tourists encouraged them to plant more. The more plants and flowers in the garden meant more visitors too. Since tulips and hyacinths are hard to grow in a hot climate, celosia flowers are grown in Sirao Flower Farm instead. These flowers are as colorful and attractive as the tulips.
+						<br><br>
+						Celosia is the main flower grown in Sirao Flower Farm. This flower is considered to be a genus of edible and ornamental plants of the Amaranth family, Amaranthaceae. Its name was derived from the Ancient Greek word “kḗleos” which means “burning” and it refers to its flame-like flower heads.
+						<br><br>
+						Aside from Celosias, other variety of flowers are grown in the farm. Flowers like sunflower, chrysanthemum, daisy and aster are among the flowers that are planted there. These flowers provide a perfect edge for picture taking.
+					</p>
 				</div>
 			</div>
 
 			<div class="gallerycontent">
-				<img class="gallerypics" src="images/PLACES/TAOISTTEMPLE.jpg" onclick="displayText1('desc7' , 'images/PLACES/TAOISTTEMPLE.jpg')">
+				<img class="gallerypics" src="images/PLACES/FASTANSTICISLAND.jpg" onclick="displayText1('desc7' , 'images/PLACES/FASTANSTICISLAND.jpg')">
 				<div id="desc7" class="desc">
-					<h2 class="p-desc" style="text-align: center;">FORTSANPEDRO</h2>
-					<p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2 class="p-desc" style="text-align: center;">FANTASTIC ISLAND</h2>
+					<p class="p-desc">
+						Three hours of land trip plus another 15 minutes of boat ride take a traveler from Cebu City to Funtastic Island in the town of Medellin in northern Cebu.
+						<br><br>
+						Funtastic Island is part of Gibitngil, an island-barangay gifted with sparkling waters, vast coral reefs, long stretch of sand beaches, a picturesque sand bar and rock formations reminiscent of those in Coron, Palawan.
+						<br><br>
+						Aside from the natural sceneries, Funtastic Island also boasts of several activities for the thrill-seekers such as a cliff-to-rock zipline, kayaking and snorkeling.
+						<br><br>
+						But the most challenging that the island offers is the 40-foot cliff diving platform, hailed Adventure of the Year for 2014 by ABS-CBN’s local magazine show MagTV.
+						<br><br>
+						The attraction, whose development is part of the town’s efforts to step up its tourism initiatives, has been attracting hundreds of local and foreign tourists, making Medellin one of the Department of Tourism’s top 10 most visited municipalities in Central Visayas for two years now.
+					</p>
 				</div>
 			</div>
-
 			<div class="gallerycontent">
-				<img class="gallerypics" src="images/img/image2.jpg" onclick="displayText1('desc8' , 'images/img/image2.jpg')">
+				<img class="gallerypics" src="images/PLACES/TAOISTTEMPLE.jpg" onclick="displayText1('desc8' , 'images/PLACES/TAOISTTEMPLE.jpg')">
 				<div id="desc8" class="desc">
-					<h2 class="p-desc" style="text-align: center;">FORTSANPEDRO</h2>
-					<p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2 class="p-desc" style="text-align: center;">TAOIST TEMPLE</h2>
+					<p class="p-desc">
+						Cebu Taoist Temple (Chinese: 宿霧定光寶殿) is a Taoist temple located in Beverly Hills Subdivision of Cebu City, Philippines. The temple is built by Cebu's substantial Chinese community in 1972.[1] With an elevation of 300 metres (980 ft) above sea level, the temple is a towering, multi-tiered, multi-hued attraction accessible by three separate winding routes.
+						<br><br>
+						Unlike the neighboring Phu Sian Temple,[2] the Taoist temple is open to the worshipers and non-worshipers alike. A ritual among devotees is where one prays to the gods to grant one's wish. The ritual includes washing of hands, going inside the chapel barefoot and dropping two blocks of wood. If the blocks of wood are both face up then one could make a wish. If not then it is not yet the time for one's wish to be granted and one has to come to the temple some other time.
+						<br><br>
+						The temple is the center of worship for Taoism, the religion which follows the teachings of the ancient Chinese philosopher, Lao Zi. Another ritual among Taoist devotees, which is done during Wednesdays and Sundays,[3] is the climbing of its 81 steps (representing the 81 chapters of Taoism scriptures) to light joss sticks and have their fortune read by the monks.
+						<br><br>
+						Some guide books and travel agencies offer trips to the temple or as a side-trip in a tour around Cebu City. But it is more popular with grade school students.
+						<br><br>
+						The entrance to the temple was a replica of the Great Wall of China. The temple includes a chapel, a library, a souvenir shop and a wishing well. The spacious balconies offer a scenic view of the downtown Cebu.
+					</p>
 				</div>
 			</div>
 
 			<div class="gallerycontent">
-				<img class="gallerypics" src="images/PLACES/FORTSANPEDRO.jpg" onclick="displayText1('desc9' , 'images/PLACES/FORTSANPEDRO.jpg')">
+				<img class="gallerypics" src="images/PLACES/OSMENAPEAK.jpg" onclick="displayText1('desc9' , 'images/PLACES/OSMENAPEAK.jpg')">
 				<div id="desc9" class="desc">
-					<h2 class="p-desc" style="text-align: center;">FORTSANPEDRO</h2>
-					<p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2 class="p-desc" style="text-align: center;">OSMENA PEAK</h2>
+					<p class="p-desc">
+						Osmeña Peak is located in the Municipality of Dalaguete in the province of Cebu. The peak is approximately 1,000 meters above sea level making it the highest peak in the island of Cebu.
+						<br><br>
+						The peak is part of the Mantalungon mountain range, which is unique from other mountain ranges in the Philippines because of its multiple jagged hills grouped together that overlook and stretch as far as the Badian shorelines. The highest of these hills is the Osmeña Peak named in honor of the famous Osmeña clan in Cebu.
+						<br><br>
+						The visual appearance of the Mantalungon range is almost similar in form to the Chocolate Hills of Bohol but the peaks of the ranges are thinner, sharper-pointed and rocky. Unlike the Chocolate Hills, the peaks of the Mantalungon ranges cluster quite near each other and give the impression of being formed from rocks that have survived through time.
+						<br><br>
+						Once you reach the Osmeña Peak, you get a 360-degree view  of  that includes the southwestern coastline of Cebu, and you even see the province of Negros Oriental. However, the peak area is fenced and under private ownership. A lot keeper collects at least 20 pesos from each climber that enters the area and there is a campsite a few meters down the peak. The campsite has a toilet and a bunkhouse available to the public for a fee.
+						<br><br>
+						Osmeña Peak and the Mantalungon range are accessible to hikers and mountaineers all year round but it is best to climb the peak in the first half of the year since the rainy season is from June to October. The peak and mountain ranges become wet and slippery during the rainy season.
+					</p>
 				</div>
 			</div>												
 		</div>
