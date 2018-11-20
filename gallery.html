@@ -51,11 +51,40 @@
 		{
 			background-color: rgba(0, 0, 0, 0.85);
 			width: 70vw;
-			height: 300px;
+			height: -25vw;
 			text-align: left;
 			display: none; 
 			position: fixed; 
 			top:68px;
+		}
+		button
+		{
+			border: 1px solid white;
+		}
+		button:hover
+		{
+			cursor: pointer;
+			padding: 5px;
+			transition: 1s;
+		}
+		input
+		{
+			margin: 30px;
+			display: block;
+			width: 25%;
+			margin: auto;
+		}
+		label
+		{
+			display: block;
+			margin-top: 20px;
+			text-align: center;
+		}
+		textarea
+		{
+			text-align: center;
+			display: block;
+			margin: auto;
 		}
 
 	</style>
@@ -83,7 +112,7 @@
 
 			<div class="gallerycontent" id="targetModal">
 				<div style="padding: 20px">
-					<img class="ggallerypics" id="picSelected" src="includes/img.jpg" >
+					<img class="ggallerypics" id="picSelected" src="" >
 						<span onclick="hideText('targetModal')">x</span>
 					<div id="descSelected" class="desc" style="display: inline-block;">
 						<p></p>
@@ -96,7 +125,7 @@
 				<img class="gallerypics" src="images/PLACES/FORTSANPEDRO.jpg" onclick="displayText1('desc1' , 'images/PLACES/FORTSANPEDRO.jpg')">
 				<div id="desc1" class="desc">
 					<h2 class="p-desc" style="text-align: center;">FORT SAN PEDRO</h2>
-					<p class="p-desc">Fuerte de San Pedro is a military defense structure in Cebu (Philippines), built by the Spanish under the command of Miguel López de Legazpi, first governor of the Captaincy General of the Philippines. It is located in the area now called Plaza Indepedencia, in the pier area of the city. The original fort was made of wood and built after the arrival of Legazpi and his expedition. In the early 17th century a stone fort was built to repel Muslim raiders. Today's structure dates from 1738 and is the oldest triangular bastion fort in the country. It served as the nucleus of the first Spanish settlement in the Philippines. During the Philippine Revolution at the end of the 19th century, it was attacked and taken by Filipino revolutionaries, who used it as a stronghold.</p>
+					<p class="p-desc">Fuerte de San Pedro is a military defense structure in Cebu (Philippines), built by the Spanish under the command of Miguel López de Legazpi, first governor of the Captaincy General of the Philippines. It is located in the area now called Plaza Indepedencia, in the pier area of the city. The original fort was made of wood and built after the arrival of Legazpi and his expedition. In the early 17th century a stone fort was built to repel Muslim raiders. Today's structure dates from 1738 and is the oldest triangular bastion fort in the country. It served as the nucleus of the first Spanish settlement in the Philippines. During the Philippine Revolution at the end of the 19th century, it was attacked and taken by Filipino revolutionaries, who used it as a stronghold.<button  onclick="bookingForm();">Book a trip here!</button></p>
 				</div>
 			</div>	
 
@@ -116,7 +145,7 @@
 
 					You can also visit the other nearby historical spots in the Parian District, which are the Casa Gorordo Museum and the Yap-San Diego House.<br><br>
 
-					The Yap-San Diego House is part of the Casa Gorordo Museum complex, which is a private museum open to the public. The museum complex highlights the lifestyle of a rich household in Cebu during the Spanish era and displays antique furnishings, clothes, kitchen equipment and utensils, and other antique items.</p>
+					The Yap-San Diego House is part of the Casa Gorordo Museum complex, which is a private museum open to the public. The museum complex highlights the lifestyle of a rich household in Cebu during the Spanish era and displays antique furnishings, clothes, kitchen equipment and utensils, and other antique items.<button  onclick="bookingForm();">Book a trip here!</button></p>
 				</div>
 			</div>	
 			<div class="gallerycontent">
@@ -127,7 +156,7 @@
 						The Kawasan Falls, a three-layered waterfall, is one of the popular tourist destinations in the province. Canyoning tours are offered upstream of the Kawasan Falls, where the Matutinao river flows through a secluded canyon. There is also the Badian mountain range and the popular trekking destination of Osmeña Peak.<br><br>
 
 						The town's jurisdiction includes Zaragosa or Badian Island, where there is a white sandy private beach and which from there snorkeling and diving activities can be arranged. Nearby Pescador Island, Moalboal offers corals and marine life for divers.
-					</p>
+					<button  onclick="bookingForm();">Book a trip here!</button></p>
 				</div>
 			</div>	
 			
@@ -137,7 +166,7 @@
 					<h2 class="p-desc" style="text-align: center;">OSLOB WHALE SHARK WATCHING</h2>
 					<p class="p-desc">
 						Oslob, Cebu is a small coastal town with a population of 30,000 people. It is a hub of activity with several tourist attractions to offer to the hoards of visitors who stop by. It is most well known for being one of the best spots to swim with whale sharks. However, there are also several other attractions to check out in Oslob.
-					</p>
+					<button  onclick="bookingForm();">Book a trip here!</button></p>
 				</div>
 			</div>	
 			<div class="gallerycontent">
@@ -153,7 +182,7 @@
 					Simala Shrine Church then is just one of those religious places, if not the most popular nowadays, where most believers (Catholics) come for various reasons.
 					<br><br>
 					Pilgrimages or visiting religious places is one of the most important aspects that most Filipino Catholics have. This aspect keeps their faith alive and keeps them going despite all the challenges in life.
-				</p>
+				<button  onclick="bookingForm();">Book a trip here!</button></p>
 				</div>
 			</div>	
 			
@@ -169,7 +198,7 @@
 						Celosia is the main flower grown in Sirao Flower Farm. This flower is considered to be a genus of edible and ornamental plants of the Amaranth family, Amaranthaceae. Its name was derived from the Ancient Greek word “kḗleos” which means “burning” and it refers to its flame-like flower heads.
 						<br><br>
 						Aside from Celosias, other variety of flowers are grown in the farm. Flowers like sunflower, chrysanthemum, daisy and aster are among the flowers that are planted there. These flowers provide a perfect edge for picture taking.
-					</p>
+					<button  onclick="bookingForm();">Book a trip here!</button></p>
 				</div>
 			</div>
 
@@ -187,7 +216,7 @@
 						But the most challenging that the island offers is the 40-foot cliff diving platform, hailed Adventure of the Year for 2014 by ABS-CBN’s local magazine show MagTV.
 						<br><br>
 						The attraction, whose development is part of the town’s efforts to step up its tourism initiatives, has been attracting hundreds of local and foreign tourists, making Medellin one of the Department of Tourism’s top 10 most visited municipalities in Central Visayas for two years now.
-					</p>
+					<button  onclick="bookingForm();">Book a trip here!</button></p>
 				</div>
 			</div>
 			<div class="gallerycontent">
@@ -204,7 +233,7 @@
 						Some guide books and travel agencies offer trips to the temple or as a side-trip in a tour around Cebu City. But it is more popular with grade school students.
 						<br><br>
 						The entrance to the temple was a replica of the Great Wall of China. The temple includes a chapel, a library, a souvenir shop and a wishing well. The spacious balconies offer a scenic view of the downtown Cebu.
-					</p>
+					<button  onclick="bookingForm();">Book a trip here!</button></p>
 				</div>
 			</div>
 
@@ -221,8 +250,7 @@
 						<br><br>
 						Once you reach the Osmeña Peak, you get a 360-degree view  of  that includes the southwestern coastline of Cebu, and you even see the province of Negros Oriental. However, the peak area is fenced and under private ownership. A lot keeper collects at least 20 pesos from each climber that enters the area and there is a campsite a few meters down the peak. The campsite has a toilet and a bunkhouse available to the public for a fee.
 						<br><br>
-						Osmeña Peak and the Mantalungon range are accessible to hikers and mountaineers all year round but it is best to climb the peak in the first half of the year since the rainy season is from June to October. The peak and mountain ranges become wet and slippery during the rainy season.
-					</p>
+						Osmeña Peak and the Mantalungon range are accessible to hikers and mountaineers all year round but it is best to climb the peak in the first half of the year since the rainy season is from June to October. The peak and mountain ranges become wet and slippery during the rainy season.<button  onclick="bookingForm();">Book a trip here!</button></p>
 				</div>
 			</div>												
 		</div>
