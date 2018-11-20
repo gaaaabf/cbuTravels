@@ -3,8 +3,11 @@
 <head>
 	<title>Gallery</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<script type="text/javascript" src="css/function.js"></script>
+	<script type="text/javascript" src="fontawesome/js/all.css"></script>
 
 	<style type="text/css">
 		.desc
@@ -20,16 +23,41 @@
 		}
 		span
 		{
+			font-family: calibri;
 			position: absolute;
-			right: -23px;
-			font-size: 25px;
+			right: 35px;
+			font-size: 30px;
 			cursor: pointer;
+			color: white;
+			z-index: 2;
+			border: 1px solid white;
+			font-weight: 900;
+			width: 30px;
+			height: 30px;
+			line-height: 24px;
+			text-align: center;
 		}
 		.gallerypics:hover
 		{
 			width: 21vw;height: 21vw;
-			cursor: pointer;
+			cursor: pointer;	
+			transition: 1s;
 		}
+		p
+		{
+			font-family: cursive;
+		}
+		#targetModal
+		{
+			background-color: rgba(0, 0, 0, 0.85);
+			width: 70vw;
+			height: 300px;
+			text-align: left;
+			display: none; 
+			position: fixed; 
+			top:68px;
+		}
+
 	</style>
 </head>
 <body>
@@ -53,10 +81,10 @@
 		</div>
 		<div style="width: 70%; margin: auto;text-align: center; ">
 
-			<div class="gallerycontent" id="targetModal" style="background-color: rgba(0, 0, 0, 0.85);width: 70vw;height: 300px;text-align: left;display: none; position: fixed; top:68px;">
+			<div class="gallerycontent" id="targetModal">
 				<div style="padding: 20px">
-					<img class="gallerypics" id="picSelected" src="includes/img.jpg" >
-						<span onclick="hideText('targetModal')">X</span>
+					<img class="ggallerypics" id="picSelected" src="includes/img.jpg" >
+						<span onclick="hideText('targetModal')">x</span>
 					<div id="descSelected" class="desc" style="display: inline-block;">
 						<p></p>
 					</div>
@@ -67,7 +95,7 @@
 			<div class="gallerycontent">
 				<img class="gallerypics" src="images/PLACES/FORTSANPEDRO.jpg" onclick="displayText1('desc1' , 'images/PLACES/FORTSANPEDRO.jpg')">
 				<div id="desc1" class="desc">
-					<h2 class="p-desc" style="text-align: center;">FORTSANPEDRO</h2>
+					<h2 class="p-desc" style="text-align: center;">FORT SAN PEDRO</h2>
 					<p class="p-desc">Fuerte de San Pedro is a military defense structure in Cebu (Philippines), built by the Spanish under the command of Miguel López de Legazpi, first governor of the Captaincy General of the Philippines. It is located in the area now called Plaza Indepedencia, in the pier area of the city. The original fort was made of wood and built after the arrival of Legazpi and his expedition. In the early 17th century a stone fort was built to repel Muslim raiders. Today's structure dates from 1738 and is the oldest triangular bastion fort in the country. It served as the nucleus of the first Spanish settlement in the Philippines. During the Philippine Revolution at the end of the 19th century, it was attacked and taken by Filipino revolutionaries, who used it as a stronghold.</p>
 				</div>
 			</div>	
@@ -94,7 +122,7 @@
 			<div class="gallerycontent">
 				<img class="gallerypics" src="images/PLACES/KAWASAN.jpg" onclick="displayText1('desc3' , 'images/PLACES/KAWASAN.jpg')">
 				<div id="desc3" class="desc">
-					<h2 class="p-desc" style="text-align: center;">KAWASAN</h2>
+					<h2 class="p-desc" style="text-align: center;">KAWASAN FALLS</h2>
 					<p class="p-desc">
 						The Kawasan Falls, a three-layered waterfall, is one of the popular tourist destinations in the province. Canyoning tours are offered upstream of the Kawasan Falls, where the Matutinao river flows through a secluded canyon. There is also the Badian mountain range and the popular trekking destination of Osmeña Peak.<br><br>
 
@@ -106,7 +134,7 @@
 			<div class="gallerycontent">
 				<img class="gallerypics" src="images/PLACES/OSLOB.jpg" onclick="displayText1('desc4' , 'images/PLACES/OSLOB.jpg')">
 				<div id="desc4" class="desc">
-					<h2 class="p-desc" style="text-align: center;">OSLOB</h2>
+					<h2 class="p-desc" style="text-align: center;">OSLOB WHALE SHARK WATCHING</h2>
 					<p class="p-desc">
 						Oslob, Cebu is a small coastal town with a population of 30,000 people. It is a hub of activity with several tourist attractions to offer to the hoards of visitors who stop by. It is most well known for being one of the best spots to swim with whale sharks. However, there are also several other attractions to check out in Oslob.
 					</p>
@@ -182,7 +210,7 @@
 
 			<div class="gallerycontent">
 				<img class="gallerypics" src="images/PLACES/OSMENAPEAK.jpg" onclick="displayText1('desc9' , 'images/PLACES/OSMENAPEAK.jpg')">
-				<div id="desc9" class="desc">
+				<div id="desc9" class="desc">	
 					<h2 class="p-desc" style="text-align: center;">OSMENA PEAK</h2>
 					<p class="p-desc">
 						Osmeña Peak is located in the Municipality of Dalaguete in the province of Cebu. The peak is approximately 1,000 meters above sea level making it the highest peak in the island of Cebu.

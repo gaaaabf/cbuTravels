@@ -37,3 +37,8 @@ function displayText1(x,y)
 			document.getElementById('targetModal').style.display = "block";
 		}
 }
+
+function messageSent()
+{
+	alert("Your message has been sent!");
+}
